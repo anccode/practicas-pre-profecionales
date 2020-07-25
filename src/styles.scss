@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+html, body { height: 100%;
+     }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.fill-remaining-space{
+    flex: 1 1 auto;
+}
+.container-spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.sport{
+    background: #FEE611 !important;
+}
+.life{
+    background: #FEE611 !important;;
+}
+.style{
+    background: #FEE611 !important;;
+}
+mat-chip.mat-chip.mat-focus-indicator.mat-primary.mat-standard-chip{
+    color: #000000;
+    min-height: 1rem;
+    padding: 9px;
+}

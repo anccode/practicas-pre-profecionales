@@ -1,0 +1,22 @@
+<mat-toolbar class="nos">
+    <a routerLink="/">
+        UPEU
+    </a>
+    <span class="fill-remaining-space"></span>
+    <a routerLink="/post" routerLinkActive="active" *ngIf="authSvc.userData | async">
+    <button mat-button>Practicas Pre Pofecionales</button>
+    </a>
+    <a routerLink="/admin" routerLinkActive="active"
+    *ngIf="authSvc.userData | async"
+    >
+        <button mat-button>Ver tus practicas</button>
+    </a>
+    <a *ngIf="authSvc.userData | async; else showLogin" (click)="onLogout()">
+        <button mat-button>Salir</button>
+    </a>
+    <ng-template #showLogin>
+    <a routerLink="/login" routerLinkActive="active">
+        <button mat-button>Entrar</button>
+    </a>
+</ng-template>
+</mat-toolbar>

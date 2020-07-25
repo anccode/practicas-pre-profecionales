@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "brand-3fcf4": {
+      "hosting": {
+        "Login": [
+          "brand-3fcf4"
+        ]
+      }
+    }
+  }
+}
